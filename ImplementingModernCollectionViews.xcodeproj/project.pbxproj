@@ -16,6 +16,7 @@
 		1A54CF6B2B2F03690065A047 /* ImplementingModernCollectionViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54CF6A2B2F03690065A047 /* ImplementingModernCollectionViewsTests.swift */; };
 		1A54CF752B2F03690065A047 /* ImplementingModernCollectionViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54CF742B2F03690065A047 /* ImplementingModernCollectionViewsUITests.swift */; };
 		1A54CF772B2F03690065A047 /* ImplementingModernCollectionViewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54CF762B2F03690065A047 /* ImplementingModernCollectionViewsUITestsLaunchTests.swift */; };
+		1A54CF842B2F040A0065A047 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54CF832B2F040A0065A047 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1A54CF702B2F03690065A047 /* ImplementingModernCollectionViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImplementingModernCollectionViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A54CF742B2F03690065A047 /* ImplementingModernCollectionViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementingModernCollectionViewsUITests.swift; sourceTree = "<group>"; };
 		1A54CF762B2F03690065A047 /* ImplementingModernCollectionViewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementingModernCollectionViewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1A54CF832B2F040A0065A047 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				1A54CF5C2B2F03690065A047 /* Assets.xcassets */,
 				1A54CF5E2B2F03690065A047 /* LaunchScreen.storyboard */,
 				1A54CF612B2F03690065A047 /* Info.plist */,
+				1A54CF832B2F040A0065A047 /* ListViewController.swift */,
 			);
 			path = ImplementingModernCollectionViews;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				1A54CF582B2F03680065A047 /* ViewController.swift in Sources */,
 				1A54CF542B2F03680065A047 /* AppDelegate.swift in Sources */,
+				1A54CF842B2F040A0065A047 /* ListViewController.swift in Sources */,
 				1A54CF562B2F03680065A047 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
