@@ -7,7 +7,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .red
         
         DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
-            let controller = UINavigationController(rootViewController: MyCollectionViewController())
+            let controller = UINavigationController(rootViewController: List2ViewController())
             controller.modalPresentationStyle = .fullScreen
             self.present(controller, animated: true)
         })
