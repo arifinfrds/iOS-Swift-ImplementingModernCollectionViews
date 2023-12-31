@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A40FAB32B407C78006A866B /* List2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A40FAB22B407C78006A866B /* List2ViewController.swift */; };
-		1A40FAB52B408C8D006A866B /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A40FAB42B408C8D006A866B /* MyView.swift */; };
 		1A54CF542B2F03680065A047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54CF532B2F03680065A047 /* AppDelegate.swift */; };
 		1A54CF562B2F03680065A047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54CF552B2F03680065A047 /* SceneDelegate.swift */; };
 		1A54CF582B2F03680065A047 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54CF572B2F03680065A047 /* ViewController.swift */; };
@@ -40,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		1A40FAB22B407C78006A866B /* List2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List2ViewController.swift; sourceTree = "<group>"; };
-		1A40FAB42B408C8D006A866B /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		1A54CF502B2F03680065A047 /* ImplementingModernCollectionViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImplementingModernCollectionViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A54CF532B2F03680065A047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A54CF552B2F03680065A047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				1A54CF612B2F03690065A047 /* Info.plist */,
 				1A54CF832B2F040A0065A047 /* ListViewController.swift */,
 				1A40FAB22B407C78006A866B /* List2ViewController.swift */,
-				1A40FAB42B408C8D006A866B /* MyView.swift */,
 			);
 			path = ImplementingModernCollectionViews;
 			sourceTree = "<group>";
@@ -267,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A40FAB52B408C8D006A866B /* MyView.swift in Sources */,
 				1A54CF582B2F03680065A047 /* ViewController.swift in Sources */,
 				1A54CF542B2F03680065A047 /* AppDelegate.swift in Sources */,
 				1A40FAB32B407C78006A866B /* List2ViewController.swift in Sources */,
