@@ -1,22 +1,6 @@
 import SwiftUI
 import UIKit
 
-protocol ItemLoader {
-    func load() -> [Item]
-}
-
-struct StubItemLoader: ItemLoader {
-    func load() -> [Item] {
-        let imageNames = ["triangle.fill", "rectangle.fill", "circle.fill", "oval.fill"]
-        
-        let items = (1...1000)
-            .map { String($0) }
-            .map { Item(text: "item name: \($0)", secondaryText: UUID().uuidString, imageName: imageNames.randomElement() ?? "triangle.fill") }
-        
-        return items
-    }
-}
-
 final class List2ViewController: UIViewController {
     
     private var collectionView: UICollectionView!
@@ -24,7 +8,7 @@ final class List2ViewController: UIViewController {
     
     private let loader: any ItemLoader
     
-    init(loader: ItemLoader) {
+    init(loader: some ItemLoader) {
         self.loader = loader
         super.init(nibName: nil, bundle: nil)
     }
