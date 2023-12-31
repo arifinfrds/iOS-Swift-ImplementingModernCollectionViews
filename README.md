@@ -44,7 +44,7 @@
 
 4. Set datasource into collectionView
 ```swift
-collectionView.dataSource = self
+collectionView.dataSource = dataSource
 ```
 
 5. Set your data and reload collectionView
