@@ -4,7 +4,6 @@ import UIKit
 final class List2ViewController: UIViewController {
     
     private var collectionView: UICollectionView!
-    private var layout: UICollectionViewLayout!
     
     private let loader: any ItemLoader
     
@@ -25,7 +24,7 @@ final class List2ViewController: UIViewController {
     }
     
     private func setupList() {
-        layout = makeLayout()
+        let layout = makeLayout()
         
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .white
