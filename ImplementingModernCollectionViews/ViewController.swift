@@ -7,7 +7,8 @@ class ViewController: UIViewController {
         view.backgroundColor = .red
         
         DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
-            let controller = UINavigationController(rootViewController: List2ViewController())
+            let loader = StubItemLoader()
+            let controller = UINavigationController(rootViewController: List2ViewController(loader: loader))
             controller.modalPresentationStyle = .fullScreen
             self.present(controller, animated: true)
         })
