@@ -1,16 +1,20 @@
 import SwiftUI
 import UIKit
 
-struct Item: Hashable {
-    let text: String
-    let secondaryText: String
-    let imageName: String
-}
-
 final class List2ViewController: UIViewController {
     
     private var collectionView: UICollectionView!
-    private var layout: UICollectionViewLayout!
+    
+    private let loader: any ItemLoader
+    
+    init(loader: some ItemLoader) {
+        self.loader = loader
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        nil
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +24,7 @@ final class List2ViewController: UIViewController {
     }
     
     private func setupList() {
-        layout = makeLayout()
+        let layout = makeLayout()
         
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .white
@@ -44,15 +48,11 @@ final class List2ViewController: UIViewController {
     }
     
     private func applyInitialSnapshot() {
-        let imageNames = ["triangle.fill", "rectangle.fill", "circle.fill", "oval.fill"]
-        
-        let items0 = (1...1000)
-            .map { String($0) }
-            .map { Item(text: "item name: \($0)", secondaryText: UUID().uuidString, imageName: imageNames.randomElement() ?? "triangle.fill") }
+        let items = loader.load()
         
         var snapshot = NSDiffableDataSourceSnapshot<Int, Item>()
         snapshot.appendSections([0])
-        snapshot.appendItems(items0, toSection: 0)
+        snapshot.appendItems(items, toSection: 0)
         
         dataSource.apply(snapshot, animatingDifferences: true)
     }
@@ -76,7 +76,7 @@ final class List2ViewController: UIViewController {
 
 struct List2ViewPreview: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> List2ViewController {
-        List2ViewController()
+        List2ViewController(loader: StubItemLoader())
     }
     
     func updateUIViewController(_ uiViewController: List2ViewController, context: Context) { }
