@@ -7,8 +7,6 @@
   - NSDiffableDataSourceSnapshot<Section, Item>
   - UICollectionView.CellRegistration<UICollectionViewListCell, Item>
 
-## Architecture Diagram
+## Preview
 ![Collection View](collectionview.png) 
 
-## Preview
-![Screenshot](screenshot.png)
