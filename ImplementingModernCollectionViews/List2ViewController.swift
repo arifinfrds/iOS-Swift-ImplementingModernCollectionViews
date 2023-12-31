@@ -1,12 +1,6 @@
 import SwiftUI
 import UIKit
 
-struct Item: Hashable {
-    let text: String
-    let secondaryText: String
-    let imageName: String
-}
-
 final class List2ViewController: UIViewController {
     
     private var collectionView: UICollectionView!
