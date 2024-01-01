@@ -9,14 +9,14 @@ import SwiftUI
 
 enum OptionType: String {
     case singleList = "Single list"
-    case singleListPortraitTwoGridsHorizontal = "Single list portrait, two grids horiziontal"
+    case singleListPortraitTwoGridsLandscape = "Single list portrait, two grids landscape"
 }
 
 struct MenuListView: View {
     
     private let options: [OptionType] = [
         .singleList,
-        .singleListPortraitTwoGridsHorizontal
+        .singleListPortraitTwoGridsLandscape
     ]
     
     var body: some View {
@@ -39,8 +39,8 @@ struct MenuListView: View {
         switch optionType {
         case .singleList:
             SingleListView()
-        case .singleListPortraitTwoGridsHorizontal:
-            SingleListPortraitTwoGridsHorizontalView()
+        case .singleListPortraitTwoGridsLandscape:
+            SingleListPortraitTwoGridsLandscapeView()
         }
     }
 }

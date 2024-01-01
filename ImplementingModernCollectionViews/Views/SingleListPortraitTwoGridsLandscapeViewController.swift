@@ -1,7 +1,7 @@
 import UIKit
 import SwiftUI
 
-class SingleListPortraitTwoGridsHorizontalViewController: UIViewController {
+class SingleListPortraitTwoGridsLandscapeViewController: UIViewController {
     
     private var collectionView: UICollectionView!
     private var layout: UICollectionViewLayout!
@@ -93,7 +93,7 @@ class SingleListPortraitTwoGridsHorizontalViewController: UIViewController {
     }
 }
 
-extension SingleListPortraitTwoGridsHorizontalViewController: UICollectionViewDataSource {
+extension SingleListPortraitTwoGridsLandscapeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
     }
@@ -105,26 +105,26 @@ extension SingleListPortraitTwoGridsHorizontalViewController: UICollectionViewDa
     }
 }
 
-extension SingleListPortraitTwoGridsHorizontalViewController: UICollectionViewDelegate {
+extension SingleListPortraitTwoGridsLandscapeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("item :\(indexPath)")
     }
 }
 
-struct SingleListPortraitTwoGridsHorizontalView: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> SingleListPortraitTwoGridsHorizontalViewController {
-        SingleListPortraitTwoGridsHorizontalViewController()
+struct SingleListPortraitTwoGridsLandscapeView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> SingleListPortraitTwoGridsLandscapeViewController {
+        SingleListPortraitTwoGridsLandscapeViewController()
     }
     
-    func updateUIViewController(_ uiViewController: SingleListPortraitTwoGridsHorizontalViewController, context: Context) { }
+    func updateUIViewController(_ uiViewController: SingleListPortraitTwoGridsLandscapeViewController, context: Context) { }
 }
 
 
 struct SingleListPortraitTwoGridsHorizontalView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            SingleListPortraitTwoGridsHorizontalView()
-            SingleListPortraitTwoGridsHorizontalView()
+            SingleListPortraitTwoGridsLandscapeView()
+            SingleListPortraitTwoGridsLandscapeView()
                 .previewInterfaceOrientation(.landscapeLeft)
         }
     }
