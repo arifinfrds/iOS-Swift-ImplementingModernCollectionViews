@@ -8,10 +8,6 @@ class SingleListPortraitTwoGridsLandscapeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        navigationController?.navigationBar.prefersLargeTitles = true
-        title = "My List"
-        
         setupList()
     }
     
@@ -39,7 +35,6 @@ class SingleListPortraitTwoGridsLandscapeViewController: UIViewController {
         layout = createSingleColumnLayout()
         
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .white
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")

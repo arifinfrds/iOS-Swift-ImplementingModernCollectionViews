@@ -29,9 +29,9 @@ struct MenuListView: View {
                 }
                 
             }
+            .navigationTitle("Modern CollectionView")
+            .navigationBarTitleDisplayMode(.large)
         }
-        .navigationTitle("Modern List")
-        .navigationBarTitleDisplayMode(.large)
     }
     
     @ViewBuilder
@@ -39,14 +39,18 @@ struct MenuListView: View {
         switch optionType {
         case .singleList:
             SingleListView()
+                .navigationTitle(optionType.rawValue)
+                .navigationBarTitleDisplayMode(.inline)
         case .singleListPortraitTwoGridsLandscape:
             SingleListPortraitTwoGridsLandscapeView()
+                .navigationTitle(optionType.rawValue)
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
 
 #Preview {
-    NavigationView {
+    NavigationStack {
         MenuListView()
     }
 }

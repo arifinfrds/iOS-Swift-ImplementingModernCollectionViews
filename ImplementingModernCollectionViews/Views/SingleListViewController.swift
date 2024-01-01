@@ -18,7 +18,6 @@ final class SingleListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupList()
         applyInitialSnapshot()
     }

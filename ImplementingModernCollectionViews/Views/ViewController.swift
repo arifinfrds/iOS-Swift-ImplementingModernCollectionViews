@@ -8,7 +8,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .red
         
         DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
-            let controller = UINavigationController(rootViewController: UIHostingController(rootView: MenuListView()))
+            let controller = UIHostingController(rootView: MenuListView())
             controller.modalPresentationStyle = .fullScreen
             self.present(controller, animated: true)
         })
