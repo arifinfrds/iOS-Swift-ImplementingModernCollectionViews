@@ -1,17 +1,13 @@
 import UIKit
 import SwiftUI
 
-class MyCollectionViewController: UIViewController {
+class SingleListPortraitTwoGridsLandscapeViewController: UIViewController {
     
     private var collectionView: UICollectionView!
     private var layout: UICollectionViewLayout!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        navigationController?.navigationBar.prefersLargeTitles = true
-        title = "My List"
-        
         setupList()
     }
     
@@ -39,7 +35,6 @@ class MyCollectionViewController: UIViewController {
         layout = createSingleColumnLayout()
         
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .white
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
@@ -93,7 +88,7 @@ class MyCollectionViewController: UIViewController {
     }
 }
 
-extension MyCollectionViewController: UICollectionViewDataSource {
+extension SingleListPortraitTwoGridsLandscapeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
     }
@@ -105,32 +100,26 @@ extension MyCollectionViewController: UICollectionViewDataSource {
     }
 }
 
-extension MyCollectionViewController: UICollectionViewDelegate {
+extension SingleListPortraitTwoGridsLandscapeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("item :\(indexPath)")
     }
 }
 
-struct CollectionViewPreview: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> MyCollectionViewController {
-        MyCollectionViewController()
+struct SingleListPortraitTwoGridsLandscapeView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> SingleListPortraitTwoGridsLandscapeViewController {
+        SingleListPortraitTwoGridsLandscapeViewController()
     }
     
-    func updateUIViewController(_ uiViewController: MyCollectionViewController, context: Context) { }
+    func updateUIViewController(_ uiViewController: SingleListPortraitTwoGridsLandscapeViewController, context: Context) { }
 }
 
-struct ContentView: View {
-    var body: some View {
-        CollectionViewPreview()
-            .edgesIgnoringSafeArea(.all)
-    }
-}
 
-struct ContentView_Previews: PreviewProvider {
+struct SingleListPortraitTwoGridsHorizontalView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
-            ContentView()
+            SingleListPortraitTwoGridsLandscapeView()
+            SingleListPortraitTwoGridsLandscapeView()
                 .previewInterfaceOrientation(.landscapeLeft)
         }
     }

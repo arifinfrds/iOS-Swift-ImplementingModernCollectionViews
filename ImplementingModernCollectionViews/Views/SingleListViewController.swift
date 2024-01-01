@@ -1,7 +1,7 @@
 import SwiftUI
 import UIKit
 
-final class List2ViewController: UIViewController {
+final class SingleListViewController: UIViewController {
     
     private var collectionView: UICollectionView!
     
@@ -18,7 +18,6 @@ final class List2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupList()
         applyInitialSnapshot()
     }
@@ -74,26 +73,19 @@ final class List2ViewController: UIViewController {
     }()
 }
 
-struct List2ViewPreview: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> List2ViewController {
-        List2ViewController(loader: StubItemLoader())
+struct SingleListView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> SingleListViewController {
+        SingleListViewController(loader: StubItemLoader())
     }
     
-    func updateUIViewController(_ uiViewController: List2ViewController, context: Context) { }
+    func updateUIViewController(_ uiViewController: SingleListViewController, context: Context) { }
 }
 
-struct List2View: View {
-    var body: some View {
-        List2ViewPreview()
-            .edgesIgnoringSafeArea(.all)
-    }
-}
-
-struct List2View_Previews: PreviewProvider {
+struct SingleListView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            List2View()
-            List2View()
+            SingleListView()
+            SingleListView()
                 .previewInterfaceOrientation(.landscapeLeft)
         }
     }
