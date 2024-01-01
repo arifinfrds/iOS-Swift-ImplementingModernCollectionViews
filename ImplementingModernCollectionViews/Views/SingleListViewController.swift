@@ -82,7 +82,7 @@ struct SingleListView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: SingleListViewController, context: Context) { }
 }
 
-struct List2View_Previews: PreviewProvider {
+struct SingleListView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             SingleListView()

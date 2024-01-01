@@ -1,7 +1,7 @@
 import UIKit
 import SwiftUI
 
-class MyCollectionViewController: UIViewController {
+class SingleListPortraitTwoGridsHorizontalViewController: UIViewController {
     
     private var collectionView: UICollectionView!
     private var layout: UICollectionViewLayout!
@@ -93,7 +93,7 @@ class MyCollectionViewController: UIViewController {
     }
 }
 
-extension MyCollectionViewController: UICollectionViewDataSource {
+extension SingleListPortraitTwoGridsHorizontalViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
     }
@@ -105,32 +105,26 @@ extension MyCollectionViewController: UICollectionViewDataSource {
     }
 }
 
-extension MyCollectionViewController: UICollectionViewDelegate {
+extension SingleListPortraitTwoGridsHorizontalViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("item :\(indexPath)")
     }
 }
 
-struct CollectionViewPreview: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> MyCollectionViewController {
-        MyCollectionViewController()
+struct SingleListPortraitTwoGridsHorizontalView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> SingleListPortraitTwoGridsHorizontalViewController {
+        SingleListPortraitTwoGridsHorizontalViewController()
     }
     
-    func updateUIViewController(_ uiViewController: MyCollectionViewController, context: Context) { }
+    func updateUIViewController(_ uiViewController: SingleListPortraitTwoGridsHorizontalViewController, context: Context) { }
 }
 
-struct ContentView: View {
-    var body: some View {
-        CollectionViewPreview()
-            .edgesIgnoringSafeArea(.all)
-    }
-}
 
-struct ContentView_Previews: PreviewProvider {
+struct SingleListPortraitTwoGridsHorizontalView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
-            ContentView()
+            SingleListPortraitTwoGridsHorizontalView()
+            SingleListPortraitTwoGridsHorizontalView()
                 .previewInterfaceOrientation(.landscapeLeft)
         }
     }

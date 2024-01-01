@@ -17,7 +17,7 @@
 		1A54CF5D2B2F03690065A047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A54CF5C2B2F03690065A047 /* Assets.xcassets */; };
 		1A54CF602B2F03690065A047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A54CF5E2B2F03690065A047 /* LaunchScreen.storyboard */; };
 		1A54CF6B2B2F03690065A047 /* ImplementingModernCollectionViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54CF6A2B2F03690065A047 /* ImplementingModernCollectionViewsTests.swift */; };
-		1A54CF842B2F040A0065A047 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54CF832B2F040A0065A047 /* ListViewController.swift */; };
+		1A54CF842B2F040A0065A047 /* SingleListPortraitTwoGridsHorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54CF832B2F040A0065A047 /* SingleListPortraitTwoGridsHorizontalViewController.swift */; };
 		1AD964512B428C2A002D068B /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD964502B428C2A002D068B /* MenuListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 		1A54CF612B2F03690065A047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A54CF662B2F03690065A047 /* ImplementingModernCollectionViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImplementingModernCollectionViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A54CF6A2B2F03690065A047 /* ImplementingModernCollectionViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplementingModernCollectionViewsTests.swift; sourceTree = "<group>"; };
-		1A54CF832B2F040A0065A047 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		1A54CF832B2F040A0065A047 /* SingleListPortraitTwoGridsHorizontalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleListPortraitTwoGridsHorizontalViewController.swift; sourceTree = "<group>"; };
 		1AD964502B428C2A002D068B /* MenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +99,7 @@
 				1A54CF5E2B2F03690065A047 /* LaunchScreen.storyboard */,
 				1A54CF572B2F03680065A047 /* ViewController.swift */,
 				1A54CF592B2F03680065A047 /* Main.storyboard */,
-				1A54CF832B2F040A0065A047 /* ListViewController.swift */,
+				1A54CF832B2F040A0065A047 /* SingleListPortraitTwoGridsHorizontalViewController.swift */,
 				1A40FAB22B407C78006A866B /* SingleListViewController.swift */,
 				1AD964502B428C2A002D068B /* MenuListView.swift */,
 			);
@@ -250,7 +250,7 @@
 				1A54CF542B2F03680065A047 /* AppDelegate.swift in Sources */,
 				1A40FAB32B407C78006A866B /* SingleListViewController.swift in Sources */,
 				1A40FABB2B411530006A866B /* ItemLoader.swift in Sources */,
-				1A54CF842B2F040A0065A047 /* ListViewController.swift in Sources */,
+				1A54CF842B2F040A0065A047 /* SingleListPortraitTwoGridsHorizontalViewController.swift in Sources */,
 				1A40FAB82B4113D4006A866B /* Item.swift in Sources */,
 				1A54CF562B2F03680065A047 /* SceneDelegate.swift in Sources */,
 			);
