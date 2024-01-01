@@ -38,7 +38,7 @@ struct MenuListView: View {
     private func detailView(from optionType: OptionType) -> some View {
         switch optionType {
         case .singleList:
-            List2ViewPreview()
+            SingleListView()
         case .singleListPortraitTwoGridsOnHorizontal:
             CollectionViewPreview()
         }
