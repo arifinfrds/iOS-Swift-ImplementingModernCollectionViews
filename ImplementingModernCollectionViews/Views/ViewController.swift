@@ -1,3 +1,4 @@
+import SwiftUI
 import UIKit
 
 class ViewController: UIViewController {
@@ -7,8 +8,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .red
         
         DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
-            let loader = StubItemLoader()
-            let controller = UINavigationController(rootViewController: List2ViewController(loader: loader))
+            let controller = UINavigationController(rootViewController: UIHostingController(rootView: MenuListView()))
             controller.modalPresentationStyle = .fullScreen
             self.present(controller, animated: true)
         })
